@@ -15,7 +15,8 @@
 }
 
 .project-card {
-  background: #f9f9f9;
+  background: var(--bg-card);
+  color: var(--text-main);
   border-radius: 10px;
   overflow: hidden;
   width: 300px;
@@ -59,4 +60,10 @@
   font-size: 0.9rem;
   color: #555;
   margin: 0.5rem 0;
+}
+
+.project-desc {
+  text-align: justify;
+  line-height: 1.6;
+  color: var(--text-main);
 }

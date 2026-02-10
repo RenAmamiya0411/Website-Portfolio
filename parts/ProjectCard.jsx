@@ -7,7 +7,7 @@ function ProjectCard({ title, description, tech, image, github, demo }) {
       <img src={image} alt={title} className="project-image" />
       <div className="project-info">
         <h3>{title}</h3>
-        <p>{description}</p>
+        <p className="project-desc">{description}</p>
         <p className="tech-used">{tech.join(".")}</p>
         <div className="project-links">
           {github && (

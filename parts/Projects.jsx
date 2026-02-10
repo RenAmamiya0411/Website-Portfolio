@@ -1,12 +1,30 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import WareFeedImage from "../assets/Warefeed.jpg";
+import SoonImage from "../assets/Soon.jpg";
 
 const projectsDone = [
   {
+    title: "Soon...",
+    description: "Soon...",
+    tech: ["Soon..."],
+    image: SoonImage,
+    github: "Soon...",
+    demo: "Soon..."
+  },
+  {
+    title: "What To Do",
+    description: "A to-do list app made for educational purposes",
+    tech: ["HTML, CSS, JavaScript, EJS"],
+    image: SoonImage,
+    github: "Soon...",
+    demo: "Soon..."
+  },
+  {
     title: "WareFeed",
-    description: "",
-    tech: [""],
+    description:
+      "An Artificial Intelligence-Base Management System for Bless Rice Mill. In Partial Fulfillment of the Requirements for the Degree of Bachelor of Science in Instrumentation and Control Engineering",
+    tech: ["Objection Detection (Bounding Boxes), Python, Raspberry Pi 5"],
     image: WareFeedImage,
     github: "Not Saved",
     demo: "Not Saved"
