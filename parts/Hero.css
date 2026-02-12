@@ -1,0 +1,77 @@
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  color: var(--accent);
+  margin-bottom: 3rem;
+}
+
+.hero-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.hero-card {
+  width: 240px;
+  height: 150px;
+  background-color: var(--bg-card);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+
+.hero-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-card.active {
+  opacity: 1;
+  transform: scale(1.15);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.hero-details {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.hero-details h2 {
+  margin-bottom: 1rem;
+}
+
+.hero-details p {
+  color: var(--text-muted);
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.hero-tech {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.hero-links {
+  margin-top: 1.5rem;
+}
+
+.hero-links a {
+  margin: 0 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-links a:hover {
+  text-decoration: underline;
+}
