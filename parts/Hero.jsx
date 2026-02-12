@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import WareFeedImage from "../assets/Warefeed.jpg";
 import SoonImage from "../assets/Soon.jpg";
 
@@ -33,6 +33,12 @@ function Hero() {
 
   const [activeProject, setActiveProject] = useState(1);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveProject(prev => (prev + 1) % featuredProjects.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [featuredProjects.length]);
   return (
     <section className="hero">
       <h1>Featured Projects</h1>
