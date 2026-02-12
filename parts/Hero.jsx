@@ -39,19 +39,26 @@ function Hero() {
     }, 5000);
     return () => clearInterval(interval);
   }, [featuredProjects.length]);
+
+  const cardWidth = 240;
+  const gap = 32;
+  const offset = (cardWidth + gap) * activeProject - (cardWidth + gap);
+
   return (
     <section className="hero">
       <h1>Featured Projects</h1>
-      <div className="hero-carousel">
-        {featuredProjects.map((featuredProject, index) => (
-          <div
-            key={index}
-            className={`hero-card ${index === activeProject ? "active" : ""}`}
-            onClick={() => setActiveProject(index)}
-          >
-            <img src={featuredProject.image} alt={featuredProject.title} />
-          </div>
-        ))}
+      <div className="hero-carousel-wrapper">
+        <div className="hero-carousel-movement" style={{ transform: `translate(-${offset}px)` }}>
+          {featuredProjects.map((featuredProject, index) => (
+            <div
+              key={index}
+              className={`hero-card ${index === activeProject ? "active" : ""}`}
+              onClick={() => setActiveProject(index)}
+            >
+              <img src={featuredProject.image} alt={featuredProject.title} />
+            </div>
+          ))}
+        </div>
       </div>
       <div className="hero-details">
         <h2>{featuredProjects[activeProject].title}</h2>

@@ -8,12 +8,17 @@
   margin-bottom: 3rem;
 }
 
-.hero-carousel {
+.hero-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.hero-carousel-movement {
+  display: flex;
   gap: 2rem;
-  margin-bottom: 3rem;
+  transition: transform 0.6s ease;
 }
 
 .hero-card {
