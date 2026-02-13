@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import WareFeedImage from "../assets/Warefeed.jpg";
 import SoonImage from "../assets/Soon.jpg";
 
@@ -32,38 +32,49 @@ function Hero() {
   ];
 
   const [projects, setProjects] = useState(featuredProjects);
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [sliding, setSliding] = useState(false);
+
+  const cardWidth = 240;
+  const gap = 32;
+  const slideWidth = cardWidth + gap;
+
+  const slideNext = () => {
+    setSliding(true);
+    setTimeout(() => {
+      setProjects(prev => [...prev.slice(1), prev[0]]);
+      setSliding(false);
+    }, 500);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setProjects(prev => {
-        return [...prev.slice(1), prev[0]];
-      });
+      slideNext();
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
-
-  const highlightedProject = projects[activeIndex];
+  }, [projects]);
 
   return (
     <section className="hero">
       <h1>Featured Projects</h1>
       <div className="hero-carousel-wrapper">
-        <div className="hero-carousel-track">
-          {projects.map((project, i) => (
-            <div key={i} className={`hero-card ${i === activeIndex ? "active" : ""}`}>
+        <div
+          className={`hero-carousel-track ${sliding ? "slide" : ""}`}
+          style={{ transform: `translateX(-${slideWidth}px)`, transition: sliding ? "transform 0.5s ease" : "none" }}
+        >
+          {projects.concat(projects[0]).map((project, i) => (
+            <div key={i} className={`hero-card ${i === 1 ? "active" : ""}`}>
               <img src={project.image} alt={project.title} />
             </div>
           ))}
         </div>
       </div>
       <div className="hero-details">
-        <h2>{highlightedProject.title}</h2>
-        <p>{highlightedProject.description}</p>
-        <div className="hero-tech">{highlightedProject.tech.join(" • ")}</div>
+        <h2>{projects[1].title}</h2>
+        <p>{projects[1].description}</p>
+        <div className="hero-tech">{projects[1].tech.join(" • ")}</div>
         <div className="hero-links">
-          <a href={highlightedProject.demo}>Demo</a>
-          <a href={highlightedProject.github}>Github</a>
+          <a href={projects[1].demo}>Demo</a>
+          <a href={projects[1].github}>Github</a>
         </div>
       </div>
     </section>
