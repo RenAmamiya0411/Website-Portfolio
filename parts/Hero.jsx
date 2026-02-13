@@ -35,7 +35,7 @@ function Hero() {
   const highlightedProject = featuredProjects[activeIndex];
 
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <h1>Featured Projects</h1>
       <div className="hero-carousel-wrapper">
         <div className="hero-carousel-track">

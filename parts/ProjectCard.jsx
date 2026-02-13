@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 
-function ProjectCard({ title, description, tech, image, github, demo }) {
+function ProjectCard({ title, description, tech, image, github, demo, date }) {
   return (
     <div className="project-card">
       <img src={image} alt={title} className="project-image" />
@@ -21,6 +21,7 @@ function ProjectCard({ title, description, tech, image, github, demo }) {
             </a>
           )}
         </div>
+        <p className="project-date">{date}</p>
       </div>
     </div>
   );
