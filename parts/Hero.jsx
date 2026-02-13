@@ -40,7 +40,7 @@ function Hero() {
       <div className="hero-carousel-wrapper">
         <div className="hero-carousel-track">
           {featuredProjects.map((project, i) => (
-            <div key={i} className={`hero-card ${i === 1 ? "active" : ""}`}>
+            <div key={i} className={`hero-card ${i === activeIndex ? "active" : ""}`} onClick={() => setActiveIndex(i)}>
               <img src={project.image} alt={project.title} />
             </div>
           ))}
