@@ -47,9 +47,7 @@ function Hero() {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      slideNext();
-    }, 5000);
+    const interval = setInterval(slideNext, 5000);
     return () => clearInterval(interval);
   }, [projects]);
 
@@ -59,9 +57,12 @@ function Hero() {
       <div className="hero-carousel-wrapper">
         <div
           className={`hero-carousel-track ${sliding ? "slide" : ""}`}
-          style={{ transform: `translateX(-${slideWidth}px)`, transition: sliding ? "transform 0.5s ease" : "none" }}
+          style={{
+            transform: sliding ? `translateX(-${slideWidth}px)` : "translateX(0)",
+            transition: sliding ? "transform 0.5s ease" : "none"
+          }}
         >
-          {projects.concat(projects[0]).map((project, i) => (
+          {projects.map((project, i) => (
             <div key={i} className={`hero-card ${i === 1 ? "active" : ""}`}>
               <img src={project.image} alt={project.title} />
             </div>
