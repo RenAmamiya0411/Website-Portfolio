@@ -9,6 +9,7 @@ function Header() {
         <a href="#hero">Featured Projects</a>
         <a href="#projects">Projects</a>
         <a href="#techs">Techs Learned</a>
+        <a href="#contacts">Contacts</a>
       </nav>
     </header>
   );

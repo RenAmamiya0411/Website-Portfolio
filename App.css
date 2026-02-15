@@ -111,6 +111,25 @@ footer {
   text-align: justify;
 }
 
+.tech-info {
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: var(--bg-main);
+}
+
+.tech-info h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-main);
+}
+
+.tech-info h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
 #techs {
   max-width: 900px;
   margin: 0 auto;
@@ -121,16 +140,30 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.2rem 2rem;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .tech-item {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   font-weight: 500;
   white-space: nowrap;
+  background-color: var(--bg-card);
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .tech-logo {
