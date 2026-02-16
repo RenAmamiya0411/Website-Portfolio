@@ -34,6 +34,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #020617;
+  z-index: 999;
 }
 
 header h1 {
