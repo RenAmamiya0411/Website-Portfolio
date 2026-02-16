@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import WareFeedImage from "../assets/Warefeed.jpg";
 import SoonImage from "../assets/Soon.jpg";
+import "./Projects.css";
 
 const projectsDone = [
   {

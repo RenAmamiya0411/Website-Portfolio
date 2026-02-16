@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Portrait from "../assets/Portrait.png";
 import GradPic from "../assets/Grad-pic.png";
+import { ReactComponent as DownloadButton } from "../assets/logos/downloadbutton.svg";
 
 function About() {
   const images = [GradPic, Portrait];
@@ -36,6 +37,10 @@ function About() {
             background helped grow my logical thinking, and problem-solving. Actively improving programming skills
             through hands-on practice and self-learning. I am eager to learn and contribute towards a development team.
           </p>
+          <a href="/CV.pdf" className="cv-button" download>
+            <DownloadButton className="cv-icon" />
+            Download CV
+          </a>
         </div>
       </div>
     </section>
