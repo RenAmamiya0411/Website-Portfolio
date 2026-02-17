@@ -3,8 +3,9 @@ import Portrait from "../assets/Portrait.png";
 import GradPic from "../assets/Grad-pic.png";
 import { ReactComponent as DownloadButton } from "../assets/logos/downloadbutton.svg";
 
+const images = [GradPic, Portrait];
+
 function About() {
-  const images = [GradPic, Portrait];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
