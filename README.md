@@ -1,3 +1,12 @@
+This is made in order to practice what I have learned in React and Git.
+This project serves as a learning playground where I experiment with component structure, styling, animations, and deployment. It is **not intended to be my final or recruiter-facing portfolio**, but rather a foundation that I will continue to improve as I build more projects.
+
+Techs Used:
+-HTML
+-CSS
+-JavaScript
+-React
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

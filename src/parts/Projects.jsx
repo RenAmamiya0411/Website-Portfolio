@@ -31,8 +31,8 @@ const projectsDone = [
     tech: ["Objection Detection (Bounding Boxes), Python, Raspberry Pi 5"],
     image: WareFeedImage,
     date: "2025-2026",
-    github: "Not Saved",
-    demo: "Not Saved"
+    github: "https://github.com/RenAmamiya0411/WareFeed",
+    demo: "https://www.youtube.com/watch?v=pA8ZL1sHOxg"
   }
 ];
 

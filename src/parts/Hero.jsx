@@ -18,8 +18,8 @@ function Hero() {
         "An Artificial Intelligence-Base Management System for Bless Rice Mill. In Partial Fulfillment of the Requirements for the Degree of Bachelor of Science in Instrumentation and Control Engineering",
       tech: ["Objection Detection (Bounding Boxes), Python, Raspberry Pi 5"],
       image: WareFeedImage,
-      github: "Not Saved",
-      demo: "Not Saved"
+      github: "https://github.com/RenAmamiya0411/WareFeed",
+      demo: "https://www.youtube.com/watch?v=pA8ZL1sHOxg"
     },
     {
       title: "What To Do",
