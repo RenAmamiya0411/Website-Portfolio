@@ -7,8 +7,10 @@ import { ReactComponent as PSQLLogo } from "../assets/logos/postgresql.svg";
 import { ReactComponent as TailwindLogo } from "../assets/logos/tailwind.svg";
 import { ReactComponent as RAPILogo } from "../assets/logos/restfulapi.svg";
 import { ReactComponent as NJSLogo } from "../assets/logos/nodejs.svg";
-import { ReactComponent as EJSLogo } from "../assets/logos/expressjs.svg";
+import { ReactComponent as ExpressLogo } from "../assets/logos/expressjs.svg";
 import { ReactComponent as JWTLogo } from "../assets/logos/jwt.svg";
+import { ReactComponent as MongoDBLogo } from "../assets/logos/mongodb.svg";
+import { ReactComponent as PostmanLogo } from "../assets/logos/postman.svg";
 
 function Tech() {
   const techsLearned = [
@@ -34,7 +36,15 @@ function Tech() {
     },
     {
       name: "Express.js",
-      Icon: EJSLogo
+      Icon: ExpressLogo
+    },
+    {
+      name: "MongoDB",
+      Icon: MongoDBLogo
+    },
+    {
+      name: "Postman",
+      Icon: PostmanLogo
     }
   ];
   const techsLearning = [
