@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import WareFeedImage from "../assets/Warefeed.jpg";
 import SoonImage from "../assets/Soon.jpg";
+import SkyCastImage from "../assets/SkyCast.png";
 
 function Hero() {
   const featuredProjects = [
     {
-      title: "Soon...",
-      description: "Soon...",
-      tech: ["Soon..."],
-      image: SoonImage,
-      github: "Soon...",
-      demo: "Soon..."
+      title: "SkyCast",
+      description: "A Weather App made to practice working with APIs and to further improve my React and Git skills.",
+      tech: ["HTML, CSS, JavaScript, React, APIs"],
+      image: SkyCastImage,
+      date: "2026",
+      github: "https://github.com/RenAmamiya0411/Weather-App",
+      demo: "https://skycast-weather-app-srhfalcon.vercel.app/"
     },
     {
       title: "WareFeed",
@@ -51,8 +53,12 @@ function Hero() {
         <p>{highlightedProject.description}</p>
         <div className="hero-tech">{highlightedProject.tech.join(" • ")}</div>
         <div className="hero-links">
-          <a href={highlightedProject.demo}>Demo</a>
-          <a href={highlightedProject.github}>Github</a>
+          <a href={highlightedProject.demo} target="_blank" rel="noopener noreferrer">
+            Demo
+          </a>
+          <a href={highlightedProject.github} target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
         </div>
       </div>
     </section>
