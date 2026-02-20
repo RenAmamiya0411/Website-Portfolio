@@ -2,17 +2,18 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import WareFeedImage from "../assets/Warefeed.jpg";
 import SoonImage from "../assets/Soon.jpg";
+import SkyCastImage from "../assets/SkyCast.png";
 import "./Projects.css";
 
 const projectsDone = [
   {
-    title: "Soon...",
-    description: "Soon...",
-    tech: ["Soon..."],
-    image: SoonImage,
+    title: "SkyCast",
+    description: "A Weather App made to practice working with APIs and to further improve my React and Git skills.",
+    tech: ["HTML, CSS, JavaScript, React, APIs"],
+    image: SkyCastImage,
     date: "2026",
-    github: "Soon...",
-    demo: "Soon..."
+    github: "https://github.com/RenAmamiya0411/Weather-App",
+    demo: "https://skycast-weather-app-srhfalcon.vercel.app/"
   },
   {
     title: "What To Do",
