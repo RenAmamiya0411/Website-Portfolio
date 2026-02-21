@@ -11,6 +11,9 @@ import { ReactComponent as ExpressLogo } from "../assets/logos/expressjs.svg";
 import { ReactComponent as JWTLogo } from "../assets/logos/jwt.svg";
 import { ReactComponent as MongoDBLogo } from "../assets/logos/mongodb.svg";
 import { ReactComponent as PostmanLogo } from "../assets/logos/postman.svg";
+import { ReactComponent as VercelLogo } from "../assets/logos/vercel.svg";
+import { ReactComponent as RenderLogo } from "../assets/logos/render.svg";
+import { ReactComponent as BootstrapLogo } from "../assets/logos/bootstrap.svg";
 
 function Tech() {
   const techsLearned = [
@@ -45,16 +48,28 @@ function Tech() {
     {
       name: "Postman",
       Icon: PostmanLogo
+    },
+    {
+      name: "Bootstrap",
+      Icon: BootstrapLogo
+    },
+    {
+      name: "Tailwind",
+      Icon: TailwindLogo
+    },
+    {
+      name: "Vercel",
+      Icon: VercelLogo
+    },
+    {
+      name: "Render",
+      Icon: RenderLogo
     }
   ];
   const techsLearning = [
     {
       name: "PostgreSQL",
       Icon: PSQLLogo
-    },
-    {
-      name: "Tailwind",
-      Icon: TailwindLogo
     },
     {
       name: "Restful API",
