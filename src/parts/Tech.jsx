@@ -14,6 +14,7 @@ import { ReactComponent as PostmanLogo } from "../assets/logos/postman.svg";
 import { ReactComponent as VercelLogo } from "../assets/logos/vercel.svg";
 import { ReactComponent as RenderLogo } from "../assets/logos/render.svg";
 import { ReactComponent as BootstrapLogo } from "../assets/logos/bootstrap.svg";
+import { ReactComponent as TypeScriptLogo } from "../assets/logos/typescript.svg";
 
 function Tech() {
   const techsLearned = [
@@ -78,6 +79,10 @@ function Tech() {
     {
       name: "JWT Auth",
       Icon: JWTLogo
+    },
+    {
+      name: "TypeScript",
+      Icon: TypeScriptLogo
     }
   ];
 
